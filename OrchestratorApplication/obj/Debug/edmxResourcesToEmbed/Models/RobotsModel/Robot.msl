@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel2StoreContainer" CdmEntityContainer="OrchestratorDBEntities13">
+    <EntitySetMapping Name="Environments">
+      <EntityTypeMapping TypeName="OrchestratorDBModel2.Environment">
+        <MappingFragment StoreEntitySet="Environments">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StandardRobots">
+      <EntityTypeMapping TypeName="OrchestratorDBModel2.StandardRobot">
+        <MappingFragment StoreEntitySet="StandardRobot">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Machine" ColumnName="Machine" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Environments" ColumnName="Environments" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

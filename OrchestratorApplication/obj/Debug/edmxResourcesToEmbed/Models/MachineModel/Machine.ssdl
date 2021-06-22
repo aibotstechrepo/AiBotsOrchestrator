@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="StandardMachine">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Installed_version" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_StandardMachine_StandardMachine">
+    <End Role="StandardMachine" Type="Self.StandardMachine" Multiplicity="1" />
+    <End Role="StandardMachine1" Type="Self.StandardMachine" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="StandardMachine">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="StandardMachine1">
+        <PropertyRef Name="Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OrchestratorDBModel1StoreContainer">
+    <EntitySet Name="StandardMachine" EntityType="Self.StandardMachine" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_StandardMachine_StandardMachine" Association="Self.FK_StandardMachine_StandardMachine">
+      <End Role="StandardMachine" EntitySet="StandardMachine" />
+      <End Role="StandardMachine1" EntitySet="StandardMachine" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

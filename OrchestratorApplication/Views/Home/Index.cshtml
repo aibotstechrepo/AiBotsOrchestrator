@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="~/Content/Machines/index.css" rel="stylesheet" />
+
+<body>
+    
+        <div class="row dashboardrowspace">
+            <div class="col-xl-3 col-md-6 mb-4 ">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card bg-primary  shadow h-100 py-2 dashboardcard">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-sm-12">
+                                    <div class="sizeofthetext font-weight-bold text-white text-uppercase mb-1 ">No.of Bots Available</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="h5 mb-0 font-weight-bold text-white text-left">1</div>
+                                </div>
+                                <div class=" col-sm-3">
+                                    <i class="fas fa-robot fa-2x text-gray-300 text-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4 ">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card bg-success shadow h-100 py-2 dashboardcard">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-sm-12">
+                                    <div class="sizeofthetext font-weight-bold text-white text-uppercase mb-1">No.of Bots Running</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="h5 mb-0 font-weight-bold text-white text-left">2</div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <i class="fa fa-spinner fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card bg-warning shadow h-100 py-2 dashboardcard">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="sizeofthetext font-weight-bold text-white text-uppercase mb-1">No.of Bots Required Attention</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="h5  mb-0 font-weight-bold text-white text-left">3</div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <i class="fa fa-exclamation-triangle fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card bg-danger shadow h-100 py-2 dashboardcard">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-sm-12">
+                                    <div class="sizeofthetext font-weight-bold text-white text-uppercase mb-1">No.of Bots Failed</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="h5 mb-0 font-weight-bold text-white text-left">4</div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <i class="fa fa-thumbs-down fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row dashboardrowspace">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card  shadow h-100 py-2 dashboardcard">
+                        <div class="card-body center-block">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total System Available</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card  shadow h-100 py-2 dashboardcard">
+                        <div class="card-body center-block">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">No.of System Offline</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card  shadow h-100 py-2 dashboardcard">
+                        <div class="card-body center-block">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">No.of System Idle</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <a class="element-box el-tablo" href="#">
+                    <div class="card  shadow h-100 py-2 dashboardcard">
+                        <div class="card-body center-block">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">No.of System Utilized</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Content Row -->
+        <div class="row dashboardrowspace">
+
+            @*<div class="col-xl-8 col-lg-7">
+
+                 Area Chart
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-area">
+                            <canvas id="myAreaChart"></canvas>
+                        </div>
+                        <hr>
+                        Styling for the area chart can be found in the <code>/js/demo/chart-area-demo.js</code> file.
+                    </div>
+                </div>*@
+
+            <!-- Bar Chart -->
+            <div class="col-xl-8 col-md-6 mb-4">
+                <div class="card shadow mb-4 h-100 dashboardcard">
+                    <div class="card-header py-3 mx-0">
+                        <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-bar">
+                            <canvas id="myBarChart"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card shadow mb-4 h-100 dashboardcard">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 mx-0">
+                        <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <div class="chart-pie pt-4">
+                            <canvas id="myPieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+<script src="~/Content/vendor/chart.js/Chart.min.js"></script>
+
+<script src="~/Content/vendor/demo/chart-pie-demo.js"></script>
+<script src="~/Content/vendor/demo/chart-bar-demo.js"></script>
+

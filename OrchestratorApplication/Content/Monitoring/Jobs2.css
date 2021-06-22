@@ -1,0 +1,16 @@
+﻿body h5{
+    font-size:12px;
+    color:black;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+.card-header{
+    padding-top:0;
+    padding-bottom:0;
+}
+
+#card .input2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

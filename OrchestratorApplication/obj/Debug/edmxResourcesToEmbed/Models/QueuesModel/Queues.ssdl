@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel8.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.Queues' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Queues">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="In_progress" />
+      <PropertyRef Name="Remaining" />
+      <PropertyRef Name="Avg_time" />
+      <PropertyRef Name="Success" />
+      <PropertyRef Name="App_exception" />
+      <PropertyRef Name="BIZ_exc" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="In_progress" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Remaining" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Avg_time" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Success" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="App_exception" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BIZ_exc" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.ReviewRequest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ReviewRequest">
+    <Key>
+      <PropertyRef Name="Queue" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Reference" />
+      <PropertyRef Name="Revision" />
+      <PropertyRef Name="Priority" />
+      <PropertyRef Name="Deadline" />
+      <PropertyRef Name="Robot" />
+      <PropertyRef Name="Exception" />
+    </Key>
+    <Property Name="Queue" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Reference" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Revision" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Priority" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Deadline" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Robot" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Exception" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Time_of_failure" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBModel8StoreContainer">
+    <EntitySet Name="Queues" EntityType="Self.Queues" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Queues].[Name] AS [Name], 
+    [Queues].[Description] AS [Description], 
+    [Queues].[In_progress] AS [In_progress], 
+    [Queues].[Remaining] AS [Remaining], 
+    [Queues].[Avg_time] AS [Avg_time], 
+    [Queues].[Success] AS [Success], 
+    [Queues].[App_exception] AS [App_exception], 
+    [Queues].[BIZ_exc] AS [BIZ_exc]
+    FROM [dbo].[Queues] AS [Queues]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ReviewRequest" EntityType="Self.ReviewRequest" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ReviewRequest].[Queue] AS [Queue], 
+    [ReviewRequest].[Status] AS [Status], 
+    [ReviewRequest].[Reference] AS [Reference], 
+    [ReviewRequest].[Revision] AS [Revision], 
+    [ReviewRequest].[Priority] AS [Priority], 
+    [ReviewRequest].[Deadline] AS [Deadline], 
+    [ReviewRequest].[Robot] AS [Robot], 
+    [ReviewRequest].[Exception] AS [Exception], 
+    [ReviewRequest].[Time_of_failure] AS [Time_of_failure]
+    FROM [dbo].[ReviewRequest] AS [ReviewRequest]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

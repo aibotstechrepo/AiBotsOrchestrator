@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel9StoreContainer" CdmEntityContainer="OrchestratorDBEntities9">
+    <EntitySetMapping Name="MonitoringRuntimes">
+      <EntityTypeMapping TypeName="OrchestratorDBModel9.MonitoringRuntime">
+        <MappingFragment StoreEntitySet="MonitoringRuntime">
+          <ScalarProperty Name="Machine" ColumnName="Machine" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Exe" ColumnName="Exe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RobotDetails">
+      <EntityTypeMapping TypeName="OrchestratorDBModel9.RobotDetail">
+        <MappingFragment StoreEntitySet="RobotDetails">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Environment" ColumnName="Environment" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Machine" ColumnName="Machine" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Current_process" ColumnName="Current_process" />
+          <ScalarProperty Name="Queue" ColumnName="Queue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

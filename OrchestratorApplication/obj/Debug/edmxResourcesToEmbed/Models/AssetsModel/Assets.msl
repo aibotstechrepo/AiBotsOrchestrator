@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModelStoreContainer" CdmEntityContainer="OrchestratorDBEntities10">
+    <EntitySetMapping Name="Assets">
+      <EntityTypeMapping TypeName="OrchestratorDBModel.Asset">
+        <MappingFragment StoreEntitySet="Assets">
+          <ScalarProperty Name="AssestID" ColumnName="AssestID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

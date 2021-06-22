@@ -1,0 +1,235 @@
+﻿@model IEnumerable<OrchestratorApplication.Models.AssetsModel.Asset>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AssetsLayout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link href="~/Content/Machines/index.css" rel="stylesheet" />
+
+<body>
+    <div class="body-content">
+        <div class="card shadow cardsize">
+
+            <div class="card-header" id="card1">
+                <!-- Topbar Search -->
+                <div class="row center-block">
+                    <div class="col-sm-2 center-block">
+                        <form class="center-block">
+                            <div class="input-group">
+                                <input type="text" class="form-control small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-10 text-right" id="append">
+                        <a href="#" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card-body cardbodysize">
+                @*<div class="row" id="card1">
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-4 rt-th headerTh contentheader" role="columnheader">
+                                    <input type="checkbox" />
+                                </div>
+                                <div class="col-sm-3 rt-th headerTh contentheader">
+                                    Name
+                                </div>
+                                <div class="rt-th headerTh contentheader">
+                                    <a href="#"><i class="fa fa-chevron-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="rt-th headerTh contentheader">Type</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="rt-th headerTh contentheader">Value</div>
+                        </div>
+                        <div class="col-sm-3 text-right">
+                            <div class="rt-th headerTh contentheader"><a href="#"><i class="fa">&#xf021;</i></a></div>
+                        </div>
+                    </div>
+                    <hr />*@
+
+                @*<div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th> <input type="checkbox"/></th>
+                                    <th>Name</th>
+                                    <th><a href="#"><i class="fa fa-chevron-down"></i></a></th>
+                                    <th>Type</th>
+                                    <th>Value</th>
+                                    <th><a href="#"><i class="fa fa-retweet"></i></a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>@item.Name</td>
+                                        <td></td>
+                                        <td>@item.Type</td>
+                                        <td>@item.Value</td>
+                                        <td></td>
+                                    </tr>
+
+                                  }
+                            </tbody>
+                        </table>
+                    </div>*@
+
+                <!-- DataTales Example -->
+
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th> <input type="checkbox" /></th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Value</th>
+
+                            </tr>
+                        </thead>
+                        @*<tfoot>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </tfoot>*@
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Type</td>
+                                    <td>@item.Value</td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                @*@foreach (var item in Model)
+                    {
+                        <div class="row" id="card1">
+                            <div class="col-sm-3">
+                                <div class="row">
+                                    <div class="col-sm-4 rt-th headerTh" role="columnheader">
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-sm-3 rt-th headerTh">
+                                        @item.Name
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rt-th headerTh">@item.Type</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="rt-th headerTh">@item.Value</div>
+                            </div>
+
+                        </div>
+                        <hr />
+                    }*@
+
+            </div>
+
+        </div>
+
+
+        <div class="container">
+
+            <div class="modal fade" id="myModal" role="dialog">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                @using (Html.BeginForm("SaveRecord", "Assets", FormMethod.Post))
+                                {
+                                    <div class="modal-header h-75 modalheadercolor">
+                                        <button type="button" class="btn btn-sm" data-dismiss="modal">Single value</button>
+                                        <button type="button" class="btn btn-sm" data-dismiss="modal">Value per robot</button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="row row1">
+                                            <div class="col-sm-12">
+                                                <label class="formspace">Asset name</label>
+                                                <input type="text" class="form-control formspace" id="Name" name="Name" />
+                                            </div>
+                                        </div>
+                                        <div class="row row1">
+                                            <div class="col-sm-12">
+                                                <label class="formspace">Type text</label>
+                                                <input type="text" class="form-control formspace" id="text" name="Type" />
+                                            </div>
+                                        </div>
+                                        <div class="row row1">
+                                            <div class="col-sm-12">
+                                                <label class="formspace">Value</label>
+                                                <input type="text" class="form-control formspace" id="Value" name="Value" />
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer modalfooterbtn">
+                                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                        <input type="submit" class="btn btn-success btn-sm" value="Create" />
+                                    </div>
+                                }
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    @*<div class="row modaldisable">
+                        <div class="col-sm-2 text-right">
+
+                        <i class="fa fa-times fa-circle fa-2x"></i>
+                        </div>
+                        </div>*@
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+@*<script src="~/Scripts/Home/btnclickcolor.js"></script>*@
+<script src="~/Content/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/Content/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/Content/js/demo/datatables-demo.js"></script>

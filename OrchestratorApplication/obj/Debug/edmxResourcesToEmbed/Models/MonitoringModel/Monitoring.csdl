@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel9" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MonitoringRuntime">
+    <Key>
+      <PropertyRef Name="Machine" />
+      <PropertyRef Name="Total" />
+      <PropertyRef Name="Exe" />
+    </Key>
+    <Property Name="Machine" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Total" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Exe" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RobotDetail">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Environment" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Machine" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Current_process" />
+      <PropertyRef Name="Queue" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Environment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Machine" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Current_process" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Queue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBEntities9" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MonitoringRuntimes" EntityType="Self.MonitoringRuntime" />
+    <EntitySet Name="RobotDetails" EntityType="Self.RobotDetail" />
+  </EntityContainer>
+</Schema>

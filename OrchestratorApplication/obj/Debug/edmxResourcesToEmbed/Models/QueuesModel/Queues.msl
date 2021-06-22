@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel8StoreContainer" CdmEntityContainer="OrchestratorDBEntities8">
+    <EntitySetMapping Name="Queues">
+      <EntityTypeMapping TypeName="OrchestratorDBModel8.Queue">
+        <MappingFragment StoreEntitySet="Queues">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="In_progress" ColumnName="In_progress" />
+          <ScalarProperty Name="Remaining" ColumnName="Remaining" />
+          <ScalarProperty Name="Avg_time" ColumnName="Avg_time" />
+          <ScalarProperty Name="Success" ColumnName="Success" />
+          <ScalarProperty Name="App_exception" ColumnName="App_exception" />
+          <ScalarProperty Name="BIZ_exc" ColumnName="BIZ_exc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReviewRequests">
+      <EntityTypeMapping TypeName="OrchestratorDBModel8.ReviewRequest">
+        <MappingFragment StoreEntitySet="ReviewRequest">
+          <ScalarProperty Name="Queue" ColumnName="Queue" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Revision" ColumnName="Revision" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+          <ScalarProperty Name="Robot" ColumnName="Robot" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="Time_of_failure" ColumnName="Time_of_failure" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

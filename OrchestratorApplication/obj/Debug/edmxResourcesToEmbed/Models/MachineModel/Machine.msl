@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel1StoreContainer" CdmEntityContainer="OrchestratorDBEntities1">
+    <EntitySetMapping Name="StandardMachines">
+      <EntityTypeMapping TypeName="OrchestratorDBModel1.StandardMachine">
+        <MappingFragment StoreEntitySet="StandardMachine">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Installed_version" ColumnName="Installed_version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

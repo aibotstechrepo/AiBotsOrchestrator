@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel4.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.Jobs' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Jobs">
+    <Key>
+      <PropertyRef Name="Process" />
+      <PropertyRef Name="Robot" />
+      <PropertyRef Name="Environment" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="Source" />
+    </Key>
+    <Property Name="Process" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Robot" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Environment" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Started" Type="varchar" MaxLength="100" />
+    <Property Name="Ended" Type="varchar" MaxLength="100" />
+    <Property Name="Source" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBModel4StoreContainer">
+    <EntitySet Name="Jobs" EntityType="Self.Jobs" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Jobs].[Process] AS [Process], 
+    [Jobs].[Robot] AS [Robot], 
+    [Jobs].[Environment] AS [Environment], 
+    [Jobs].[State] AS [State], 
+    [Jobs].[Started] AS [Started], 
+    [Jobs].[Ended] AS [Ended], 
+    [Jobs].[Source] AS [Source]
+    FROM [dbo].[Jobs] AS [Jobs]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

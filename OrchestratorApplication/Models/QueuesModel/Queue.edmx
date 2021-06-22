@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OrchestratorDBModel7.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Queues">
+          <Key>
+            <PropertyRef Name="QueueID" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="In_progress" Type="varchar" MaxLength="100" />
+          <Property Name="Remaining" Type="varchar" MaxLength="100" />
+          <Property Name="Avg_time" Type="varchar" MaxLength="100" />
+          <Property Name="Success" Type="varchar" MaxLength="100" />
+          <Property Name="App_exception" Type="varchar" MaxLength="100" />
+          <Property Name="BIZ_exc" Type="varchar" MaxLength="100" />
+          <Property Name="Retries" Type="int" />
+          <Property Name="QueueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ReviewRequest">
+          <Key>
+            <PropertyRef Name="ReviewID" />
+          </Key>
+          <Property Name="Queue" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Reference" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Revision" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Priority" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Deadline" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Robot" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Exception" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Time_of_failure" Type="varchar" MaxLength="100" />
+          <Property Name="ReviewID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OrchestratorDBModel7StoreContainer">
+          <EntitySet Name="Queues" EntityType="Self.Queues" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ReviewRequest" EntityType="Self.ReviewRequest" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OrchestratorDBModel7" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Queue">
+          <Key>
+            <PropertyRef Name="QueueID" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="In_progress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Remaining" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Avg_time" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Success" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="App_exception" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BIZ_exc" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Retries" Type="Int32" />
+          <Property Name="QueueID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="ReviewRequest">
+          <Key>
+            <PropertyRef Name="ReviewID" />
+          </Key>
+          <Property Name="Queue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Reference" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Revision" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Priority" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Deadline" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Robot" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Exception" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Time_of_failure" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ReviewID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="OrchestratorDBEntities12" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Queues" EntityType="Self.Queue" />
+          <EntitySet Name="ReviewRequests" EntityType="Self.ReviewRequest" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel7StoreContainer" CdmEntityContainer="OrchestratorDBEntities12">
+          <EntitySetMapping Name="Queues">
+            <EntityTypeMapping TypeName="OrchestratorDBModel7.Queue">
+              <MappingFragment StoreEntitySet="Queues">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="In_progress" ColumnName="In_progress" />
+                <ScalarProperty Name="Remaining" ColumnName="Remaining" />
+                <ScalarProperty Name="Avg_time" ColumnName="Avg_time" />
+                <ScalarProperty Name="Success" ColumnName="Success" />
+                <ScalarProperty Name="App_exception" ColumnName="App_exception" />
+                <ScalarProperty Name="BIZ_exc" ColumnName="BIZ_exc" />
+                <ScalarProperty Name="Retries" ColumnName="Retries" />
+                <ScalarProperty Name="QueueID" ColumnName="QueueID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ReviewRequests">
+            <EntityTypeMapping TypeName="OrchestratorDBModel7.ReviewRequest">
+              <MappingFragment StoreEntitySet="ReviewRequest">
+                <ScalarProperty Name="Queue" ColumnName="Queue" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="Revision" ColumnName="Revision" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+                <ScalarProperty Name="Robot" ColumnName="Robot" />
+                <ScalarProperty Name="Exception" ColumnName="Exception" />
+                <ScalarProperty Name="Time_of_failure" ColumnName="Time_of_failure" />
+                <ScalarProperty Name="ReviewID" ColumnName="ReviewID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

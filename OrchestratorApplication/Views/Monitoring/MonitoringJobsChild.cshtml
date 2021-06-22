@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "MonitoringJobsChild";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link href="~/Content/Monitoring/Jobs2.css" rel="stylesheet" />
+
+
+<body>
+        <div class="row" id="row1">
+
+            <div class="col-sm-4">
+                <div class="card  shadow h-100 py-2">
+
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="LicenseUsageText"><h5>Triggered Jobs States</h5></div>
+
+
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <a href="#" class="btn btn-info btn-sm bg-primary btn-circle text-right" id=" button">
+                                    <i class="fas fa-info-circle"></i>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-body center-block">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body center-block">
+                                        <a href="#" class="btn btn-secondary text-center">Running Jobs</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body center-block">
+                                        <a href="#" class="btn btn-secondary text-center">Pending Jobs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body center-block">
+                                        <a href="#" class="btn btn-secondary text-center">Stopping Jobs</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body center-block">
+                                        <a href="#" class="btn btn-secondary text-center">Terminating Jobs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="card  shadow h-100 py-2" id="body">
+
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="LicenseUsageText"><h5>Completed Jobs Overview</h5></div>
+
+
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <a href="#" class="btn btn-info btn-sm bg-primary btn-circle text-right" id=" button">
+                                    <i class="fas fa-info-circle"></i>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body center-block">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card  shadow h-100 py-2">
+
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="LicenseUsageText"><h5>Error Feed</h5></div>
+
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <a href="#" class="btn btn-info btn-sm bg-primary btn-circle text-right" id=" button">
+                                    <i class="fas fa-info-circle"></i>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body center-block" id="card">
+                        <div class="input2"><input type="text" class="form-control" /></div>
+                        <div class="input2"><input type="text" class="form-control" /></div>
+                        <div class="input2"><input type="text" class="form-control" /></div>
+                        <div class="input2"><input type="text" class="form-control" /></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    
+</body>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel3StoreContainer" CdmEntityContainer="OrchestratorDBEntities3">
+    <EntitySetMapping Name="Processes">
+      <EntityTypeMapping TypeName="OrchestratorDBModel3.Process">
+        <MappingFragment StoreEntitySet="Processes">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Environment" ColumnName="Environment" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Packages">
+      <EntityTypeMapping TypeName="OrchestratorDBModel3.Package">
+        <MappingFragment StoreEntitySet="Packages">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

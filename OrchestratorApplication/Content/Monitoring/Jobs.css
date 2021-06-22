@@ -1,0 +1,28 @@
+﻿.square {
+    height:60px;
+    width:100px;
+    background-color: grey;
+    text-align: center;
+}
+
+body h5{
+    font-size:12px;
+    color:black;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+.card-header{
+    padding-top:0;
+    padding-bottom:0;
+}
+
+#row2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

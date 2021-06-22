@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Environments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="800" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StandardRobot">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Machine" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Environments" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBModel2StoreContainer">
+    <EntitySet Name="Environments" EntityType="Self.Environments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StandardRobot" EntityType="Self.StandardRobot" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

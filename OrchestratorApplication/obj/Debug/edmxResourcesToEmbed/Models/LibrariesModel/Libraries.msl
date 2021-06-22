@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel5StoreContainer" CdmEntityContainer="OrchestratorDBEntities5">
+    <EntitySetMapping Name="Libraries">
+      <EntityTypeMapping TypeName="OrchestratorDBModel5.Library">
+        <MappingFragment StoreEntitySet="Libraries">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PackageVersions">
+      <EntityTypeMapping TypeName="OrchestratorDBModel5.PackageVersion">
+        <MappingFragment StoreEntitySet="PackageVersion">
+          <ScalarProperty Name="Versions" ColumnName="Versions" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

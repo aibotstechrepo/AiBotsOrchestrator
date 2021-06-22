@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel4StoreContainer" CdmEntityContainer="OrchestratorDBEntities4">
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="OrchestratorDBModel4.Job">
+        <MappingFragment StoreEntitySet="Jobs">
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="Robot" ColumnName="Robot" />
+          <ScalarProperty Name="Environment" ColumnName="Environment" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Started" ColumnName="Started" />
+          <ScalarProperty Name="Ended" ColumnName="Ended" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OrchestratorDBModel9.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.MonitoringRuntime' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="MonitoringRuntime">
+          <Key>
+            <PropertyRef Name="Machine" />
+            <PropertyRef Name="Total" />
+            <PropertyRef Name="Exe" />
+          </Key>
+          <Property Name="Machine" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Total" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Exe" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.RobotDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="RobotDetails">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Environment" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Machine" />
+            <PropertyRef Name="Status" />
+            <PropertyRef Name="Current_process" />
+            <PropertyRef Name="Queue" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Environment" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Machine" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Current_process" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Queue" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OrchestratorDBModel9StoreContainer">
+          <EntitySet Name="MonitoringRuntime" EntityType="Self.MonitoringRuntime" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [MonitoringRuntime].[Machine] AS [Machine], 
+    [MonitoringRuntime].[Total] AS [Total], 
+    [MonitoringRuntime].[Exe] AS [Exe]
+    FROM [dbo].[MonitoringRuntime] AS [MonitoringRuntime]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="RobotDetails" EntityType="Self.RobotDetails" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [RobotDetails].[Name] AS [Name], 
+    [RobotDetails].[Environment] AS [Environment], 
+    [RobotDetails].[Type] AS [Type], 
+    [RobotDetails].[Machine] AS [Machine], 
+    [RobotDetails].[Status] AS [Status], 
+    [RobotDetails].[Current_process] AS [Current_process], 
+    [RobotDetails].[Queue] AS [Queue]
+    FROM [dbo].[RobotDetails] AS [RobotDetails]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OrchestratorDBModel9" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MonitoringRuntime">
+          <Key>
+            <PropertyRef Name="Machine" />
+            <PropertyRef Name="Total" />
+            <PropertyRef Name="Exe" />
+          </Key>
+          <Property Name="Machine" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Total" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Exe" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RobotDetail">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Environment" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Machine" />
+            <PropertyRef Name="Status" />
+            <PropertyRef Name="Current_process" />
+            <PropertyRef Name="Queue" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Environment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Machine" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Current_process" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Queue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OrchestratorDBEntities9" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MonitoringRuntimes" EntityType="Self.MonitoringRuntime" />
+          <EntitySet Name="RobotDetails" EntityType="Self.RobotDetail" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel9StoreContainer" CdmEntityContainer="OrchestratorDBEntities9">
+          <EntitySetMapping Name="MonitoringRuntimes">
+            <EntityTypeMapping TypeName="OrchestratorDBModel9.MonitoringRuntime">
+              <MappingFragment StoreEntitySet="MonitoringRuntime">
+                <ScalarProperty Name="Machine" ColumnName="Machine" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Exe" ColumnName="Exe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RobotDetails">
+            <EntityTypeMapping TypeName="OrchestratorDBModel9.RobotDetail">
+              <MappingFragment StoreEntitySet="RobotDetails">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Environment" ColumnName="Environment" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Machine" ColumnName="Machine" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Current_process" ColumnName="Current_process" />
+                <ScalarProperty Name="Queue" ColumnName="Queue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel5.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.Libraries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Libraries">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="Published" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="800" Nullable="false" />
+    <Property Name="Published" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.PackageVersion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PackageVersion">
+    <Key>
+      <PropertyRef Name="Versions" />
+      <PropertyRef Name="Published" />
+    </Key>
+    <Property Name="Versions" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Published" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBModel5StoreContainer">
+    <EntitySet Name="Libraries" EntityType="Self.Libraries" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Libraries].[Name] AS [Name], 
+    [Libraries].[Description] AS [Description], 
+    [Libraries].[Published] AS [Published]
+    FROM [dbo].[Libraries] AS [Libraries]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PackageVersion" EntityType="Self.PackageVersion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PackageVersion].[Versions] AS [Versions], 
+    [PackageVersion].[Published] AS [Published]
+    FROM [dbo].[PackageVersion] AS [PackageVersion]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

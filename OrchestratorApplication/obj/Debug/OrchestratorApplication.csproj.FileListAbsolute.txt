@@ -1,0 +1,219 @@
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.dll.config
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.pdb
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.exe
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.exe.config
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.rsp
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.exe
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.exe.config
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.rsp
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.AppContext.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Console.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Compression.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.FileSystem.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Pipes.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.AccessControl.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Claims.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.ValueTuple.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XPath.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.exe
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.exe.config
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.rsp
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\VBCSCompiler.exe
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Helpers.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Mvc.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Razor.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Deployment.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Razor.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Razor.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Deployment.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Razor.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Helpers.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Mvc.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csproj.CoreCompileInputs.cache
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csproj.CopyComplete
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.pdb
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.SqlServer.dll
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.SqlServer.xml
+D:\Aibots-Orchestrator\Orchestrator\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csprojAssemblyReference.cache
+D:\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.dll.config
+D:\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.pdb
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.exe
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.exe.config
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.rsp
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.exe
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.exe.config
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.rsp
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.Managed.Core.targets
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.AppContext.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Console.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Compression.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.FileSystem.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Pipes.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.AccessControl.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Claims.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Principal.Windows.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.ValueTuple.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XmlDocument.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XPath.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.exe
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.exe.config
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.rsp
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\VBCSCompiler.exe
+D:\OrchestratorApplication\OrchestratorApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.SqlServer.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Helpers.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Mvc.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Razor.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Deployment.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Razor.dll
+D:\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.SqlServer.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Razor.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Deployment.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Razor.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Helpers.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Mvc.xml
+D:\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csprojAssemblyReference.cache
+D:\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csproj.CoreCompileInputs.cache
+D:\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csproj.CopyComplete
+D:\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.dll
+D:\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.pdb
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.dll.config
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\OrchestratorApplication.pdb
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.exe
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.exe.config
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csc.rsp
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.exe
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.exe.config
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\csi.rsp
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.Managed.Core.targets
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.AppContext.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Console.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Compression.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.FileSystem.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.IO.Pipes.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.AccessControl.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Claims.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Security.Principal.Windows.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.ValueTuple.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XmlDocument.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XPath.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.exe
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.exe.config
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\vbc.rsp
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\VBCSCompiler.exe
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.SqlServer.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Helpers.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Mvc.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Razor.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Deployment.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Razor.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\EntityFramework.SqlServer.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Razor.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Deployment.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Webpages.Razor.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Helpers.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\System.Web.Mvc.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csprojAssemblyReference.cache
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csproj.CoreCompileInputs.cache
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.csproj.CopyComplete
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.dll
+D:\AiBots\AiBots_Projects\Phoenix Orchistrator\Archive\OrchestratorApplication\OrchestratorApplication\obj\Debug\OrchestratorApplication.pdb

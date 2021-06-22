@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OrchestratorDBModel4.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.Jobs' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Jobs">
+          <Key>
+            <PropertyRef Name="Process" />
+            <PropertyRef Name="Robot" />
+            <PropertyRef Name="Environment" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="Source" />
+          </Key>
+          <Property Name="Process" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Robot" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Environment" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="State" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Started" Type="varchar" MaxLength="100" />
+          <Property Name="Ended" Type="varchar" MaxLength="100" />
+          <Property Name="Source" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OrchestratorDBModel4StoreContainer">
+          <EntitySet Name="Jobs" EntityType="Self.Jobs" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Jobs].[Process] AS [Process], 
+    [Jobs].[Robot] AS [Robot], 
+    [Jobs].[Environment] AS [Environment], 
+    [Jobs].[State] AS [State], 
+    [Jobs].[Started] AS [Started], 
+    [Jobs].[Ended] AS [Ended], 
+    [Jobs].[Source] AS [Source]
+    FROM [dbo].[Jobs] AS [Jobs]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OrchestratorDBModel4" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="Process" />
+            <PropertyRef Name="Robot" />
+            <PropertyRef Name="Environment" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="Source" />
+          </Key>
+          <Property Name="Process" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Robot" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Environment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Started" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Ended" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Source" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OrchestratorDBEntities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Jobs" EntityType="Self.Job" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OrchestratorDBModel4StoreContainer" CdmEntityContainer="OrchestratorDBEntities4">
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="OrchestratorDBModel4.Job">
+              <MappingFragment StoreEntitySet="Jobs">
+                <ScalarProperty Name="Process" ColumnName="Process" />
+                <ScalarProperty Name="Robot" ColumnName="Robot" />
+                <ScalarProperty Name="Environment" ColumnName="Environment" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Started" ColumnName="Started" />
+                <ScalarProperty Name="Ended" ColumnName="Ended" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

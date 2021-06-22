@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel8" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Queue">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="In_progress" />
+      <PropertyRef Name="Remaining" />
+      <PropertyRef Name="Avg_time" />
+      <PropertyRef Name="Success" />
+      <PropertyRef Name="App_exception" />
+      <PropertyRef Name="BIZ_exc" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="In_progress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Remaining" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Avg_time" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Success" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="App_exception" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BIZ_exc" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReviewRequest">
+    <Key>
+      <PropertyRef Name="Queue" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Reference" />
+      <PropertyRef Name="Revision" />
+      <PropertyRef Name="Priority" />
+      <PropertyRef Name="Deadline" />
+      <PropertyRef Name="Robot" />
+      <PropertyRef Name="Exception" />
+    </Key>
+    <Property Name="Queue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Reference" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Revision" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Priority" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deadline" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Robot" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Exception" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Time_of_failure" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBEntities8" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Queues" EntityType="Self.Queue" />
+    <EntitySet Name="ReviewRequests" EntityType="Self.ReviewRequest" />
+  </EntityContainer>
+</Schema>

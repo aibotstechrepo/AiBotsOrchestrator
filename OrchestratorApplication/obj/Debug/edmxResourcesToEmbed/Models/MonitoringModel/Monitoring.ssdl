@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel9.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.MonitoringRuntime' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MonitoringRuntime">
+    <Key>
+      <PropertyRef Name="Machine" />
+      <PropertyRef Name="Total" />
+      <PropertyRef Name="Exe" />
+    </Key>
+    <Property Name="Machine" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Total" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Exe" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OrchestratorDB.dbo.RobotDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RobotDetails">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Environment" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Machine" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Current_process" />
+      <PropertyRef Name="Queue" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Environment" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Machine" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Current_process" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Queue" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBModel9StoreContainer">
+    <EntitySet Name="MonitoringRuntime" EntityType="Self.MonitoringRuntime" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MonitoringRuntime].[Machine] AS [Machine], 
+    [MonitoringRuntime].[Total] AS [Total], 
+    [MonitoringRuntime].[Exe] AS [Exe]
+    FROM [dbo].[MonitoringRuntime] AS [MonitoringRuntime]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RobotDetails" EntityType="Self.RobotDetails" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RobotDetails].[Name] AS [Name], 
+    [RobotDetails].[Environment] AS [Environment], 
+    [RobotDetails].[Type] AS [Type], 
+    [RobotDetails].[Machine] AS [Machine], 
+    [RobotDetails].[Status] AS [Status], 
+    [RobotDetails].[Current_process] AS [Current_process], 
+    [RobotDetails].[Queue] AS [Queue]
+    FROM [dbo].[RobotDetails] AS [RobotDetails]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

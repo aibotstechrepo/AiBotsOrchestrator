@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel7.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Queues">
+    <Key>
+      <PropertyRef Name="QueueID" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="In_progress" Type="varchar" MaxLength="100" />
+    <Property Name="Remaining" Type="varchar" MaxLength="100" />
+    <Property Name="Avg_time" Type="varchar" MaxLength="100" />
+    <Property Name="Success" Type="varchar" MaxLength="100" />
+    <Property Name="App_exception" Type="varchar" MaxLength="100" />
+    <Property Name="BIZ_exc" Type="varchar" MaxLength="100" />
+    <Property Name="Retries" Type="int" />
+    <Property Name="QueueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReviewRequest">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="Queue" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Reference" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Revision" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Priority" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Deadline" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Robot" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Exception" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Time_of_failure" Type="varchar" MaxLength="100" />
+    <Property Name="ReviewID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBModel7StoreContainer">
+    <EntitySet Name="Queues" EntityType="Self.Queues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReviewRequest" EntityType="Self.ReviewRequest" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,177 @@
+﻿
+@{
+    ViewBag.Title = "ReviewRequest";
+    Layout = "~/Views/Shared/_QueuesLayout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link href="~/Content/Machines/index.css" rel="stylesheet" />
+
+<body>
+    <div class="card shadow cardsize">
+
+        <div class="card-header" id="card1">
+            <!-- Topbar Search -->
+            <div class="row">
+                <div class="col-sm-2">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+
+        <div class="card-body cardbodysize">
+            @*<div class="row" id="card1">
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-sm-4 rt-th headerTh contentheader" role="columnheader">
+                        <input type="checkbox" />
+                    </div>
+                    <div class="col-sm-3 rt-th headerTh contentheader">
+                        Queue
+                    </div>
+                    <div class="rt-th headerTh contentheader">
+                        <a href="#"><i class="fa fa-chevron-down"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Status</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Reference</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Revision</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Priority</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Deadline</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Robot</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Exception</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="rt-th headerTh contentheader">Time of failure</div>
+            </div>
+            <div class="col-sm-1 text-right">
+                <div class="rt-th headerTh contentheader"><a href="#"><i class="fa">&#xf021;</i></a></div>
+            </div>
+        </div>
+        <hr />*@
+
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th> <input type="checkbox" /></th>
+                            <th>Queue</th>
+                            <th><a href="#"><i class="fa fa-chevron-down"></i></a></th>
+                            <th>Status</th>
+                            <th>Reference</th>
+                            <th>Revision</th>
+                            <th>Priority</th>
+                            <th>Deadline</th>
+                            <th>Robot</th>
+                            <th>Exception</th>
+                            <th>Time of failure</th>
+                            <th><a href="#"><i class="fa fa-retweet"></i></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td> @item.Queue</td>
+                                <td></td>
+                                <td>@item.Status</td>
+                                <td>@item.Reference</td>
+                                <td>@item.Revision</td>
+                                <td>@item.Priority</td>
+                                <td>@item.Deadline</td>
+                                <td>@item.Robot</td>
+                                <td>@item.Exception</td>
+                                <td>@item.Time_of_failure</td>
+                                <td></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            @*@foreach (var item in Model)
+            {
+
+                <div class="row" id="card1">
+                    <div class="col-sm-3">
+                        <div class="row">
+                            <div class="col-sm-4 rt-th headerTh" role="columnheader">
+                                <input type="checkbox" />
+                            </div>
+                            <div class="col-sm-3 rt-th headerTh">
+                                @item.Queue
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Status</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Reference</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Revision</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Priority</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Deadline</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Robot</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Exception</div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="rt-th headerTh">@item.Time_of_failure</div>
+                    </div>
+
+                </div>
+                <hr />
+
+            }*@
+
+        </div>
+
+    </div>
+
+    </body>
+

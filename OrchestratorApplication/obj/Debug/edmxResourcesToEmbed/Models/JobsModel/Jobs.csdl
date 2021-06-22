@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OrchestratorDBModel4" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Process" />
+      <PropertyRef Name="Robot" />
+      <PropertyRef Name="Environment" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="Source" />
+    </Key>
+    <Property Name="Process" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Robot" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Environment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Started" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ended" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Source" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrchestratorDBEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Jobs" EntityType="Self.Job" />
+  </EntityContainer>
+</Schema>

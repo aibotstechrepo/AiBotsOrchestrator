@@ -1,0 +1,202 @@
+﻿body{
+    font-family:Avenir;
+}
+
+
+.sidebar {
+    width: 6.5rem;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    /*padding-top:50px;*/
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 9rem !important;
+    }
+}
+
+.topbar {
+    width: 100%;
+    height: 2.800rem;
+    position: fixed;
+    z-index: 1030;
+    overflow: hidden;
+    padding-right:10rem;
+    background-color: #d80e0e;
+    margin-left:9rem;
+    
+}
+
+#accordionSidebar {
+    background:white;
+}
+.sidebar-dark hr.sidebar-divider {
+    border-top: 1px solid black;
+}
+.sidebar-dark .nav-item.active .nav-link,
+.sidebar-dark .nav-item .nav-link{
+color: black;
+}
+
+    .sidebar-dark .nav-item.active .nav-link .fas,
+    .sidebar-dark .nav-item .nav-link .fas,
+    .sidebar-dark .nav-item .nav-link .fa,
+    .sidebar-dark .nav-item .nav-link .far {
+        color: #ca0f0f;
+    }
+
+    @media (min-width: 768px) {
+        .sidebar .nav-item .nav-link span {
+            font-size: .65rem;
+            display: inline;
+            font-weight: bold;
+        }
+}
+
+@media (min-width: 768px) {
+    .sidebar .nav-item .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem;
+        /* width: 14rem; */
+    }
+}
+.sidebar-dark .nav-item.active .nav-link:hover, .sidebar-dark .nav-item .nav-link:hover,
+.sidebar-dark .nav-item.active .nav-link .fas:hover, .sidebar-dark .nav-item .nav-link .fas:hover {
+    color: white;
+    background-color: #ed0f0f;
+}
+
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+        padding: .5rem 1rem;
+        margin: 0 .5rem;
+        display: block;
+        color: white;
+        text-decoration: none;
+        border-radius: .35rem;
+        white-space: nowrap;
+    }
+
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover,
+    .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
+        color: black;
+    }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.container {
+    padding-top: 40px;
+    padding-left: 170px;
+    padding-bottom: 0px;
+}
+
+.fa-retweet:before, 
+    .fa-chevron-down:before {
+    
+    color: #d80e0e;
+}
+
+
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item i {
+    color: #d80e0e
+}
+
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item i:hover{
+        color:white;
+    }
+
+    /*.navbar-header span{
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    font-family:Cooper;
+}*/
+    .navbar-header #link {
+        text-decoration: none;
+        font-size: 13px;
+        color: white;
+        padding-left: 8px;
+        border: none;
+    }
+
+.navbar-header #link2 {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    background: #d80e0e;
+    padding-left: 8px;
+    border: none;
+}
+
+.navbar-header select option {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #ed0f0f;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+select{
+    border: none;
+    outline: none;
+}
+
+select option:hover{
+    color:white;
+}
+
+/*table-bordered td, .table-bordered th {
+    border: 0px solid #e3e6f0;
+}*/
+
+/*.table-bordered td, .table-bordered th {
+    border: 0px solid #e3e6f0;
+    color: black;
+}
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px;
+    color: black;
+}*/
+
+/*.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #e3e6f0;
+}*/
+
+.fa-question-circle:before, .fa-bell:before,
+.fa-user-circle:before {
+    color: white;
+}
+
+.modalheadercolor {
+    background-color: #d80e0e;
+}
+
+
+.modaldisable{
+    color:white;
+    padding-top:50px;
+    padding-right:200px;
+}
+
+
+.modal .modal-footer .btn-group-sm > .btn, .modal .modal-footer .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    width: 6rem;
+    border-radius: 0rem;
+}
